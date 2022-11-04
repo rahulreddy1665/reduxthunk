@@ -1,0 +1,10 @@
+export const name = 'Hi, Jesicaa';
+export const userNameErrMsg = `Enter the username`;
+export const lastNameErrMsg = `Enter the lastname`;
+export const passwordErrMsg = `Enter the password`;
+export const passwordLengthErrorMsg = `password must be atleast 8 chracter`;
+export const confirmPasswordErrMsg = `Enter the confirm password`;
+export const phoneNumberErrMsg = `Enter the phonenumber`;
+export const emailErrMsg = `Enter the email`;
+export const emailValidationErrMsg = `Enter the valid email`;
+export const notEqualPasswordErrMsg = `Password and Confirm password are not equal`;
