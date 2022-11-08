@@ -1,112 +1,30 @@
+import {View, Text} from 'react-native';
 import React from 'react';
-import {useState} from 'react';
-import {
-  ActivityIndicator,
-  Button,
-  PermissionsAndroid,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
-import Contacts from 'react-native-contacts';
-import {connect} from 'react-redux';
-import * as actions from '../app/actions/actions';
-import GTextInput from './components/GTextinput';
-import {lastNameErrMsg, userNameErrMsg} from './utils/Strings';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {Header_shown, ScreenNames} from './constants/Constants';
+import Splashscreen from './Splashscreen';
+import ReduxEx from './ReduxEx';
+import Main from './screens/Main';
 
-const ReduxAsyncApp = props => {
-  const [userName, setUserName] = useState(null);
-  const [Contatcs, setContacts] = useState([]);
-  const [userNameError, setUserNameError] = useState(false);
-  const [lastName, setlastName] = useState(null);
-  const [lastNameError, setLastNameError] = useState(false);
-  const LoadContatcs = () => {
-    PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.READ_CONTACTS, {
-      title: 'Contacts',
-      message: 'This app would like to view your contacts.',
-      buttonPositive: 'Please accept bare mortal',
-    }).then(
-      Contacts.getAll()
-        .then(contacts => {
-          // work with contacts
-          console.log('Totoal Contatcs' + JSON.stringify(contacts));
-          setContacts(contacts);
-        })
-        .catch(e => {
-          console.log(e);
-        }),
-    );
-  };
+const ReduxApp = () => {
+  const Stack = createNativeStackNavigator();
   return (
-    <ScrollView>
-      {props.isLoading ? (
-        <ActivityIndicator />
-      ) : (
-        <View>
-          <Text style={{fontSize: 24, textAlign: 'center'}}>{props.quote}</Text>
-          <Button title="Load Quote" onPress={() => props.loadQuote()} />
-          <Button
-            title="Load contacts"
-            style={{marginTop: 20}}
-            onPress={LoadContatcs}></Button>
-          {Contatcs.map(item => (
-            <View key={item.recordID} style={{justifyContent: 'center'}}>
-              <Text style={{fontSize: 18}}>
-                {' '}
-                {`${item.givenName} ${item.familyName}`}{' '}
-              </Text>
-            </View>
-          ))}
-          <View>
-            <GTextInput
-              onChange={txt => {
-                setUserName(txt);
-                setUserNameError(false);
-              }}
-              value={userName}
-              placeholder={'Enter your first name'}
-              error={userNameError}
-              errorMessage={userNameErrMsg}
-            />
-          </View>
-          <View>
-            <GTextInput
-              onChange={txt => {
-                setlastName(txt);
-              }}
-              value={lastName}
-              placeholder={'Enter your last name'}
-              error={lastNameError}
-              errorMessage={lastNameErrMsg}
-            />
-          </View>
-        </View>
-      )}
-    </ScrollView>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName={ScreenNames.SPLASH_SCREEN}>
+        <Stack.Screen
+          name={ScreenNames.SPLASH_SCREEN}
+          component={Splashscreen}
+          options={Header_shown}
+        />
+        <Stack.Screen
+          name={ScreenNames.MAIN}
+          component={Main}
+          options={Header_shown}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 
-const mapStateToProps = state => {
-  return {
-    quote: state.quote,
-    isLoading: state.isLoading,
-    error: state.error,
-  };
-};
-
-const mapDispatchToProps = dispatch => {
-  return {
-    loadQuote: () => dispatch(actions.loadQuote()),
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(ReduxAsyncApp);
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default ReduxApp;

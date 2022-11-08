@@ -13,7 +13,7 @@ const normalize = size => {
 };
 
 const COLORS = {
-  primary: '#0077b6',
+  primary: '#091A2B',
   white: '#FFFFFF',
   black: '#000000',
   gray: '#F5F5F8',

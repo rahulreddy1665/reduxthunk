@@ -54,17 +54,17 @@ class Draggable extends Component {
 
     switch (index) {
       case 1:
-        source = require('../../assert/images/image_1.png');
+        source = require('../../assets/images/image_1.png');
         break;
       case 2:
-        source = require('../../assert/images/image_2.png');
+        source = require('../../assets/images/image_2.png');
         break;
       case 3:
-        source = require('../../assert/images/image_3.png');
+        source = require('../../assets/images/image_3.png');
         break;
 
       default:
-        source = require('../../assert/images/image_1.png');
+        source = require('../../assets/images/image_1.png');
         break;
     }
 

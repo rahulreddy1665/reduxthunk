@@ -3,9 +3,9 @@ import {SafeAreaView, StatusBar, StyleSheet, View} from 'react-native';
 import {connect} from 'react-redux';
 
 const MyStatusBar = ({backgroundColor, themeColors, ...props}) => (
-  <View style={[styles.statusBar, {backgroundColor: '#0077b6'}]}>
+  <View style={[styles.statusBar, {backgroundColor: '#091A2B'}]}>
     <SafeAreaView>
-      <StatusBar translucent backgroundColor={'#0077b6'} {...props} />
+      <StatusBar translucent backgroundColor={'#091A2B'} {...props} />
     </SafeAreaView>
   </View>
 );
