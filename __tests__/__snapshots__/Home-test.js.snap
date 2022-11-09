@@ -1,0 +1,698 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home snapShot 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "backgroundColor": "#091A2B",
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <View
+      accessibilityIgnoresInvertColors={true}
+      style={
+        Object {
+          "height": 555.8333333333334,
+          "width": 750,
+        }
+      }
+    >
+      <Image
+        resizeMode="cover"
+        source={
+          Object {
+            "testUri": "../../../images/bg1.jpg",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+            Object {
+              "height": 555.8333333333334,
+              "width": 750,
+            },
+            Object {
+              "opacity": 0.5,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginTop": 20,
+          }
+        }
+      >
+        <RNSVGSvgView
+          align="xMidYMid"
+          bbHeight="25"
+          bbWidth="25"
+          className="feather feather-chevron-left"
+          fill="none"
+          focusable={false}
+          height="25"
+          meetOrSlice={0}
+          minX={0}
+          minY={0}
+          stroke="#FFFFFF"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="3"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Object {
+                "marginLeft": 25,
+              },
+              Object {
+                "flex": 0,
+                "height": 25,
+                "width": 25,
+              },
+            ]
+          }
+          vbHeight={24}
+          vbWidth={24}
+          width="25"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <RNSVGGroup
+            fill={null}
+            propList={
+              Array [
+                "fill",
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              Object {
+                "payload": 4294967295,
+                "type": 0,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth="3"
+          >
+            <RNSVGPath
+              d="M15 18L9 12 15 6"
+            />
+          </RNSVGGroup>
+        </RNSVGSvgView>
+        <View
+          style={
+            Object {
+              "display": "flex",
+              "flexDirection": "row",
+            }
+          }
+        >
+          <RNSVGSvgView
+            align="xMidYMid"
+            bbHeight="24"
+            bbWidth="24"
+            className="feather feather-play-circle"
+            fill="none"
+            focusable={false}
+            height="24"
+            meetOrSlice={0}
+            minX={0}
+            minY={0}
+            stroke="#FFFFFF"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "marginRight": 10,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
+            }
+            vbHeight={24}
+            vbWidth={24}
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <RNSVGGroup
+              fill={null}
+              propList={
+                Array [
+                  "fill",
+                  "stroke",
+                  "strokeWidth",
+                  "strokeLinecap",
+                  "strokeLinejoin",
+                ]
+              }
+              stroke={
+                Object {
+                  "payload": 4294967295,
+                  "type": 0,
+                }
+              }
+              strokeLinecap={1}
+              strokeLinejoin={1}
+              strokeWidth="2"
+            >
+              <RNSVGCircle
+                cx="12"
+                cy="12"
+                r="10"
+              />
+              <RNSVGPath
+                d="M10 8L16 12 10 16 10 8z"
+              />
+            </RNSVGGroup>
+          </RNSVGSvgView>
+          <RNSVGSvgView
+            align="xMidYMid"
+            bbHeight="24"
+            bbWidth="24"
+            className="feather feather-heart"
+            focusable={false}
+            height="24"
+            meetOrSlice={0}
+            minX={0}
+            minY={0}
+            stroke="red"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "marginRight": 25,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
+            }
+            vbHeight={24}
+            vbWidth={24}
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <RNSVGGroup
+              propList={
+                Array [
+                  "stroke",
+                  "strokeWidth",
+                  "strokeLinecap",
+                  "strokeLinejoin",
+                ]
+              }
+              stroke={
+                Object {
+                  "payload": 4294901760,
+                  "type": 0,
+                }
+              }
+              strokeLinecap={1}
+              strokeLinejoin={1}
+              strokeWidth="2"
+            >
+              <RNSVGPath
+                d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+              />
+            </RNSVGGroup>
+          </RNSVGSvgView>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignContent": "center",
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginTop": 10,
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "testUri": "../../../images/stranger.webp",
+            }
+          }
+          style={
+            Object {
+              "height": 240,
+              "width": 180,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignContent": "center",
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginTop": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "backgroundColor": "red",
+              "borderRadius": 20,
+              "display": "flex",
+              "elevation": 3,
+              "flexDirection": "row",
+              "height": 40,
+              "justifyContent": "center",
+              "marginLeft": 20,
+              "marginRight": 20,
+              "opacity": 1,
+              "width": "40%",
+            }
+          }
+        >
+          <RNSVGSvgView
+            align="xMidYMid"
+            bbHeight="24"
+            bbWidth="24"
+            className="feather feather-play"
+            fill="none"
+            focusable={false}
+            height="24"
+            meetOrSlice={0}
+            minX={0}
+            minY={0}
+            stroke="#FFFFFF"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "marginTop": 8,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
+            }
+            vbHeight={24}
+            vbWidth={24}
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <RNSVGGroup
+              fill={null}
+              propList={
+                Array [
+                  "fill",
+                  "stroke",
+                  "strokeWidth",
+                  "strokeLinecap",
+                  "strokeLinejoin",
+                ]
+              }
+              stroke={
+                Object {
+                  "payload": 4294967295,
+                  "type": 0,
+                }
+              }
+              strokeLinecap={1}
+              strokeLinejoin={1}
+              strokeWidth="2"
+            >
+              <RNSVGPath
+                d="M5 3L19 12 5 21 5 3z"
+              />
+            </RNSVGGroup>
+          </RNSVGSvgView>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Poppins-Bold",
+                "fontSize": 13,
+                "marginLeft": 8,
+                "marginTop": 11,
+                "textAlign": "center",
+              }
+            }
+          >
+            Play
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "backgroundColor": "white",
+              "borderRadius": 20,
+              "display": "flex",
+              "elevation": 3,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "opacity": 1,
+              "width": "40%",
+            }
+          }
+        >
+          <RNSVGSvgView
+            align="xMidYMid"
+            bbHeight="24"
+            bbWidth="24"
+            className="feather feather-layers"
+            fill="none"
+            focusable={false}
+            height="24"
+            meetOrSlice={0}
+            minX={0}
+            minY={0}
+            stroke="#000000"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "marginTop": 8,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
+            }
+            vbHeight={24}
+            vbWidth={24}
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <RNSVGGroup
+              fill={null}
+              propList={
+                Array [
+                  "fill",
+                  "stroke",
+                  "strokeWidth",
+                  "strokeLinecap",
+                  "strokeLinejoin",
+                ]
+              }
+              stroke={
+                Object {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+              strokeLinecap={1}
+              strokeLinejoin={1}
+              strokeWidth="2"
+            >
+              <RNSVGPath
+                d="M12 2L2 7 12 12 22 7 12 2z"
+              />
+              <RNSVGPath
+                d="M2 17L12 22 22 17"
+              />
+              <RNSVGPath
+                d="M2 12L12 17 22 12"
+              />
+            </RNSVGGroup>
+          </RNSVGSvgView>
+          <Text
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "Poppins-Bold",
+                "fontSize": 13,
+                "marginLeft": 8,
+                "marginTop": 11,
+                "textAlign": "center",
+              }
+            }
+          >
+            Episodes
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "marginTop": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "Poppins-Bold",
+            "fontSize": 22,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Stranger Things
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 11,
+            "marginBottom": 3,
+            "marginTop": 3,
+          }
+        }
+      >
+         
+        8.7 IMDB 
+        •
+         50m 
+        •
+         2016
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "marginLeft": 30,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 15,
+            "marginBottom": 3,
+            "marginTop": 3,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "red",
+            }
+          }
+        >
+          Latest:
+        </Text>
+         Episode 8(Season3)
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 11,
+            "width": 343.2,
+          }
+        }
+      >
+        When a young boy vanishes, a small town uncovers a mystery involving secret experimensts, verifiying supernatural forces, & one strange girl
+         
+      </Text>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "Poppins-Bold",
+              "fontSize": 12,
+              "marginBottom": 3,
+              "marginTop": 3,
+            }
+          }
+        >
+          Genres:
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "Poppins-Regular",
+              "fontSize": 11,
+              "marginTop": 5,
+            }
+          }
+        >
+          Drama,Mystery,Sci-FI & Fantasy
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "Poppins-Regular",
+              "fontSize": 11,
+              "marginTop": 5,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Poppins-Bold",
+                "fontSize": 12,
+                "marginBottom": 3,
+                "marginTop": 3,
+              }
+            }
+          >
+            Stars:
+          </Text>
+          Millie Bobby Brown,Winana Ryder,David Harbour Finn Wolfhard,Caleb McLaughlin,Natalia Dyer....
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "Poppins-Bold",
+              "fontSize": 12,
+              "marginBottom": 3,
+              "marginTop": 3,
+            }
+          }
+        >
+          Companies:
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "Poppins-Regular",
+              "fontSize": 11,
+              "marginTop": 5,
+            }
+          }
+        >
+          21 laps entertainment
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

@@ -1,17 +1,35 @@
-import React from 'react';
-import {useState} from 'react';
-import {Text, TextInput, TouchableOpacity, View} from 'react-native';
-import {connect} from 'react-redux';
-import * as actions from '../actions/CrudActions';
+import {
+  StyleSheet,
+  Text,
+  View,
+  TextInput,
+  TouchableOpacity,
+  Alert,
+} from 'react-native';
+import React, {useState} from 'react';
+import {useDispatch} from 'react-redux';
+import {addTask} from '../redux/taskSlice';
 
-const Monitor = props => {
+const TodoHeader = () => {
   const [todo, setTodo] = useState('');
 
-  const handleAdd = () => {
-    props.CreateTodo(todo);
-    console.log(props);
+  const dispatch = useDispatch();
+
+  const onSubmitTask = () => {
+    if (todo.trim().length === 0) {
+      Alert.alert('You need to enter a task');
+      setTodo('');
+      return;
+    }
+
+    dispatch(
+      addTask({
+        task: todo,
+      }),
+    );
     setTodo('');
   };
+
   return (
     <View>
       <Text
@@ -39,7 +57,7 @@ const Monitor = props => {
             borderRadius: 5,
           }}
           placeholder="Add todo"
-          onChangeText={text => setTodo(text)}
+          onChangeText={setTodo}
           value={todo}
         />
         {/* Button */}
@@ -52,26 +70,12 @@ const Monitor = props => {
             borderRadius: 5,
             alignItems: 'center',
           }}
-          onPress={handleAdd}>
+          onPress={onSubmitTask}>
           <Text style={{color: 'white'}}>Add</Text>
         </TouchableOpacity>
       </View>
     </View>
   );
 };
-// For mapping the redux state to the page
-const mapStateToProps = state => {
-  return {
-    TodoData: state.test.TodoData,
-    isLoading: state.test.isLoading,
-    error: state.test.error,
-  };
-};
 
-// For mapping the function to the page(i.e the function which we called in reducers)
-const mapDispatchToProps = dispatch => {
-  return {
-    CreateTodo: () => dispatch(actions.CreateTodo()),
-  };
-};
-export default connect(mapStateToProps, mapDispatchToProps)(Monitor);
+export default TodoHeader;

@@ -90,9 +90,9 @@ const ReduxAsyncApp = props => {
 // For mapping the redux state to the page
 const mapStateToProps = state => {
   return {
-    quote: state.quote,
-    isLoading: state.isLoading,
-    error: state.error,
+    quote: state.common.quote,
+    isLoading: state.common.isLoading,
+    error: state.common.error,
   };
 };
 
